@@ -13,9 +13,7 @@ To run this project locally or deploy it to AWS Lambda, follow these steps:
    ```bash
    git clone <repository-url>
 Install the required dependencies:
-   ```bash
-   git clone <repository-url>
-pip install -r requirements.txt:\
+  
 
 ### Set up the environment variables:Create a .env file in the root directory and add the following variables:
 
