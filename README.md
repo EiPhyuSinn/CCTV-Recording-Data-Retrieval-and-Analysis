@@ -13,25 +13,22 @@ To run this project locally or deploy it to AWS Lambda, follow these steps:
    ```bash
    git clone <repository-url>
 Install the required dependencies:
-
+``bash
+   git clone <repository-url>
 pip install -r requirements.txt
 Set up the environment variables:Create a .env file in the root directory and add the following variables:
-plaintext
-Copy code
-MONGODB_URL_STRING=mongodb://<username>:<password>@<mongodb-host>:<mongodb-port>/<database-name>?authSource=admin
-REGION_DATA={"Region - 1": "<API_URL_1>", "Region - 2": "<API_URL_2>", ...}
+
+
 Replace placeholders with actual values.
-Run the script:
-bash
-Copy code
-python main.py
-Architecture
+
+
+## Architecture
 The project architecture consists of the following components:
 
-Data Retrieval: CCTV recording data is fetched using the webapi/entry.cgi endpoint.
-Data Analysis: The fetched data is analyzed to extract important information.
-MongoDB: Data is stored in a MongoDB database hosted on an AWS EC2 instance.
-Docker: The project can be containerized using Docker for easy deployment.
+. Data Retrieval: CCTV recording data is fetched using the webapi/entry.cgi endpoint.
+. Data Analysis: The fetched data is analyzed to extract important information.
+.MongoDB: Data is stored in a MongoDB database hosted on an AWS EC2 instance.
+.Docker: The project can be containerized using Docker for easy deployment.
 AWS Lambda: Scheduled Lambda functions trigger the data retrieval process every 5 minutes.
 Environment Variables
 MONGODB_URL_STRING: Connection string for MongoDB.
