@@ -32,8 +32,7 @@ The project architecture consists of the following components:
 - Environment Variables
 - MONGODB_URL_STRING: Connection string for MongoDB.
 - REGION_DATA: Dictionary mapping region names to API URLs for CCTV data retrieval.
-- Contributing
+## Contributing
 - Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
