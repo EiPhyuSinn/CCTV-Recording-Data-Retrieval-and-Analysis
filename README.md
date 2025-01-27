@@ -8,20 +8,20 @@ This project retrieves CCTV recording data from Hana Microfinance Company's bran
 
 To run this project locally or deploy it to AWS Lambda, follow these steps:
 
-1. Clone the repository:
+- Clone the repository:
 
    ```bash
-   git clone <repository-url>
-Install the required dependencies:
+   git clone https://github.com/EiPhyuSinn/CCTV-Recording-Data-Retrieval-and-Analysis
+    ```
+- Install the required dependencies
   
 
 ### Set up the environment variables:Create a .env file in the root directory and add the following variables:
 
+- Replace placeholders with actual values.
 
-2. Replace placeholders with actual values.
 
-
-## Architecture
+### Architecture
 The project architecture consists of the following components:
 
 - Data Retrieval: CCTV recording data is fetched using the webapi/entry.cgi endpoint.
@@ -32,7 +32,5 @@ The project architecture consists of the following components:
 - Environment Variables
 - MONGODB_URL_STRING: Connection string for MongoDB.
 - REGION_DATA: Dictionary mapping region names to API URLs for CCTV data retrieval.
-## Contributing
-- Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
 
 
